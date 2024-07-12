@@ -1,0 +1,90 @@
+.card-wrapper {
+    margin: 5% 0;
+}
+
+/* You can adjust the image size by increasing/decreasing the width, height */
+.custom-circle-image {
+    width: 10vw; /* note I used vw not px for better responsiveness */
+    height: 10vw;
+}
+
+.custom-circle-image img {
+    object-fit: cover;
+}
+
+.card-title {
+    letter-spacing: 1.1px;
+}
+
+.card-text {
+    font-family: MerriweatherRegular;
+    font-size: 22px;
+    line-height: initial;
+}
+
+.dropzone {
+    border-style: dashed;
+}
+
+.error {
+    font-family: MerriweatherRegular;
+    font-size: 30px;
+    line-height: initial;
+    color: blue;
+    text-align: center;
+}
+
+#classTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#classTable td, #classTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#classTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Added media query for better responsiveness with seven images */
+@media (min-width: 1200px) {
+    .card-wrapper {
+        flex: 0 0 14.28%; /* Adjust to 1/7th of the row for seven images */
+        max-width: 14.28%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .card-wrapper {
+        flex: 0 0 20%; /* Adjust for smaller screens */
+        max-width: 20%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .card-wrapper {
+        flex: 0 0 25%; /* Adjust for medium screens */
+        max-width: 25%;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-wrapper {
+        flex: 0 0 33.33%; /* Adjust for small screens */
+        max-width: 33.33%;
+    }
+}
+
+@media (max-width: 575px) {
+    .card-wrapper {
+        flex: 0 0 50%; /* Adjust for extra small screens */
+        max-width: 50%;
+    }
+}
